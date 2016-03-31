@@ -1,16 +1,11 @@
 ![slide] (http://res.cloudinary.com/comm1t/image/upload/v1449126545/piatto2_oohxyd.jpg "Slide")
 
-# Psd To Html, CSS3, jQuery, Bootstrap, Animate etc.
-http://kt815.bitbucket.org/piatto.psd/
-(shorten url http://goo.gl/BJdDXV)
-
 ## Source: Piatto – A Free Flat Style Landing Page PSD
 http://wegraphics.net/downloads/piatto-a-free-flat-style-landing-page-psd/
 
 ## Installation:
 
 1. `npm install`
-
 2. `bower install`
 
 ## Build tasks
@@ -33,12 +28,6 @@ http://wegraphics.net/downloads/piatto-a-free-flat-style-landing-page-psd/
     * **assets** *(photohop sources)*
     * index.html
     * browserconfig.xml *(favicons config)*
-
-## Checklist
-https://www.forgett.com/checklist/2725109886
-
-## Static Pages (the final work)
-http://kt815.bitbucket.org/piatto.psd/
 
 ## Вёрстка макета
 
