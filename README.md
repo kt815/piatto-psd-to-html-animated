@@ -32,7 +32,6 @@ http://wegraphics.net/downloads/piatto-a-free-flat-style-landing-page-psd/
 ## Вёрстка макета
 
 * **PSD Макет** находиться по ссылке http://goo.gl/S6UeJ7
-* **Исходный код на bitbucket**: https://goo.gl/VF3BqJ
 * В качестве менеджера задач используется **grunt**
 * Выполнена **HTML верстка** макета
 * Основные инструменты Jade, Less, Npm, Bower, Grunt + tasks, Git, Photoshop
