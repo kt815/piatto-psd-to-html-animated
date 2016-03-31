@@ -1,0 +1,8 @@
+# Global OSX ignores
+.DS_Store
+
+# Build
+bower_components/
+node_modules/
+src/index.html
+.grunt/

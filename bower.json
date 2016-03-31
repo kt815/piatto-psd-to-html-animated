@@ -1,0 +1,28 @@
+{
+  "name": "PiattoPsd",
+  "authors": [
+    "kt815 <kt.815@mail.ru>"
+  ],
+  "description": "Psd To Html",
+  "main": "index.html",
+  "devDependencies": {
+    "grunt-contrib-jade": "~0.15.0"
+  },
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "pst",
+    "to",
+    "html"
+  ],
+  "license": "MIT",
+  "homepage": "piatto.psd",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

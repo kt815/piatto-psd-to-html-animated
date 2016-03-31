@@ -1,0 +1,292 @@
+doctype html
+//- Optional IE8, IE9 Support
+!= "<!--[if IE 8]><html class=\"ie8\"><![endif]-->"
+!= "<!--[if IE 9]><html class=\"ie9\"><![endif]-->"
+//- Optional all Bowsers Support, except greater than IE 8
+!= "<!--[if gt IE 8]><!-->"
+html(lang='ru-RU')
+  != "<!--<![endif]-->"
+  head
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name='description', content='A goodly landing page made from piatto.psd')
+    meta(name='author', content='piatto.psd')
+    title Piatto Theme, Psd to Html, CSS3, jQuery, Bootstrap, Animate etc
+    // build:css css/piatto.min.css
+    link(rel='stylesheet', type='text/css', href='css/app.css')
+    link(rel='stylesheet', type='text/css', href='css/piatto.css')
+    link(rel='stylesheet', type='text/css', href='css/animate.css')
+    // /build
+    link(href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic', rel='stylesheet', type='text/css')
+    //- link(href="css/bootstrap-ie7.css" rel="stylesheet")
+    //- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    //- WARNING: Respond.js doesn't work if you view the page via file://
+
+    //- Optional less than IE8, IE9 Support
+    <!--[if lt IE 9]>
+    script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js")
+    <![endif]-->
+    <!--[if IE 8]>
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js")
+    <![endif]-->
+
+
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
+
+    // Mobile Specific Meta
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')    
+    link(rel='apple-touch-icon', sizes='57x57', href='fav/apple-touch-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='fav/apple-touch-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='fav/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='fav/apple-touch-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='fav/apple-touch-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='fav/apple-touch-icon-120x120.png')
+    link(rel='icon', type='image/png', href='fav/favicon-32x32.png', sizes='32x32')
+    link(rel='icon', type='image/png', href='fav/favicon-96x96.png', sizes='96x96')
+    link(rel='icon', type='image/png', href='fav/favicon-16x16.png', sizes='16x16')
+    link(rel='manifest', href='fav/manifest.json')
+    meta(name='msapplication-TileColor', content='#da532c')
+    meta(name='theme-color', content='#ffffff')
+
+  body
+      header.wow.bounceInDown
+        // 1
+        .container
+          .row
+            .col-md-5.col-sm-16.col-xs-16.header__logo
+              .header__logo_block
+                h1.header__logo_background
+                  a.header__logo_link.hide__text(href='#') A goodly landing page made from piatto.psd
+                span.header__logo_span Landing Page Design
+            .col-md-11.col-sm-16.col-xs-16.header__nav
+              nav.header__nav_block
+                ul.header__nav_ul
+                  li.header__nav_li
+                    a.header__nav_link(href='#menu-section-product-about_3') About
+                  li.header__nav_li
+                    a.header__nav_link(href='#menu-section-subscribe_5') Benefits
+                  li.header__nav_li
+                    a.header__nav_link(href='#menu-section-download_4') Packages
+                  li.header__nav_li
+                    a.header__nav_link.button.button__header_orange(href='#menu-section-subscribe_5')
+                      span.header__nav_span.button__span_header Buy Now
+      section#section-promo-banner_2
+        .promo
+          // 2
+          .container
+            .row
+              .col-md-7.col-sm-16.media-bg-1.col-xs-16
+                .promo__image.wow.fadeInLeft(data-wow-delay='1s')
+                    h2.promo__image_header Try a Demo.
+                    .promo__image_buttons
+                      ul.promo__image_ul
+                        li.promo__image_li
+                          a.promo__image_link(href='#5').button.button__promo_orange.view-button View Demo
+                        li.promo__image_li
+                          a.promo__image_link(href='#5').button.button__promo_orange Buy Demo
+              .col-md-9.col-sm-16.media-bg-2.col-xs-16
+                .promo__title.wow.fadeInRight(data-wow-delay='1s')
+                  h1.promo__title_h1 Our Product
+                  h3.promo__title_h3 (Beats Your Product)
+                  p.promo__title_p-orange
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus augue, hendrerit eget accumsan et, interdum in lacus Fusce odio enim.
+                  p.promo__title_p-white
+                    | Nam pellentesque aliquam libero. Fusce odio enim, cursus vitae ante eget, venenatis mollis eros. Donec sit amet vulputate leo. Aenean pharetra tellus eu facilisis malesuada. Cras ac cursus nulla. Etiam commodo interdum lobortis. Cras fringilla arcu sed dolor ultricies ornare.
+      section#menu-section-product-about_3
+        .product
+          // 3
+          .container
+            .product__title
+              h1.product__title_h1 About Our Product
+              h3.product__title_h3 (It's Better Than Yours)
+            .row
+              .col-md-4.col-sm-8.col-xs-16
+                .product__features.wow.fadeInRight
+                  span.product__features_icon.product__features_tool
+                  p.product__features_p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus augue, hendrerit eget accumsan et, interdum in lacus. Nulla et convallis quam. In at nisi commodo,
+              .col-md-4.col-sm-8.col-xs-16
+                .product-features.wow.fadeInRight
+                  span.product__features_icon.product__features_cloud
+                  p.product__features_p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus augue, hendrerit eget accumsan et, interdum in lacus. Nulla et convallis quam. In at nisi commodo,
+              .col-md-4.col-sm-8.col-xs-16
+                .product-features.wow.fadeInRight
+                  span.product__features_icon.product__features_foto
+                  p.product__features_p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus augue, hendrerit eget accumsan et, interdum in lacus. Nulla et convallis quam. In at nisi commodo,
+              .col-md-4.col-sm-8.col-xs-16
+                .product-features.wow.fadeInRight
+                  span.product__features_icon.product__features_mail
+                  p.product__features_p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus augue, hendrerit eget accumsan et, interdum in lacus. Nulla et convallis quam. In at nisi commodo,
+      section#menu-section-download_4
+        .download
+          // 4
+          .container
+            .row
+              .col-md-2.col-sm-16.col-xs-16
+                .download__follow
+                  .download__follow_box
+                    a(href='#')
+                      img.download__follow_image(src='images/img-small.png', alt='Image description')
+                  .download__follow_span-box
+                    a.button.download__button_orange.button__span(href='#5')
+                      span + Follow
+                    span.download__follow_nick @Piatto
+                    br
+                    span.download__follow_desc Designer,
+                    br
+                    span.download__follow_desc Musician
+              .col-md-10.col-sm-16.col-xs-16
+                .download__images
+                  .download__images_section.wow.fadeIn
+                    div.download__images_box
+                      a.download__images_link(data-gallary='leanModal', href='#test')
+                        div.download__images_div +
+                        img.download__images_image(src='images/img-product.png', alt='Image description')
+                    div.download__images_box
+                      a.download__images_link(data-gallary='leanModal', href='#test')
+                        div.download__images_div +
+                        img.download__images_image(src='images/img-product.png', alt='Image description')
+                    div.download__images_box
+                      a.download__images_link(data-gallary='leanModal', href='#test')
+                        div.download__images_div +  
+                        img.download__images_image(src='images/img-product.png', alt='Image description')
+                    div.download__images_box
+                      a.download__images_link(data-gallary='leanModal', href='#test')
+                        div.download__images_div +  
+                        img.download__images_image(src='images/img-product.png', alt='Image description')
+                    div.download__images_box
+                      a.download__images_link(data-gallary='leanModal', href='#test')
+                        div.download__images_div +  
+                        img.download__images_image(src='images/img-product.png', alt='Image description')
+                    div.download__images_box
+                      a.download__images_link(data-gallary='leanModal', href='#test')
+                        div.download__images_div +  
+                        img.download__images_image(src='images/img-product.png', alt='Image description')
+                    #test
+                      a.modal_close(href='#', onclick='return false;') ×
+                      img(src='images/600x400.png', alt='Image description')              
+              .col-md-4.col-sm-16.col-xs-16
+                .download__social
+                  a(href='#')
+                    img.download__social_image(src='images/img-circle.png', alt='Image description')
+                  a.button-download.download__button_blue.button__span(href='#5')
+                    span Download Now
+                  .download__social_icons
+                    ul.download__social_ul
+                      li.download__social_li
+                        a.download__social_a.download__social_facebook.hide__text(href='#') Facebook
+                      li.download__social_li
+                        a.download__social_a.download__social_twitter.hide__text(href='#') Twitter
+                    span.download__social_span Be Sure to Share
+      section#menu-section-subscribe_5
+        .subscribe
+          // 5
+          .container.subscribe__indent
+            .row
+              .col-md-7.col-sm-16.col-xs-16
+                h1.subscribe__box_h1 Section subscribe
+                .row.subscribe__box_example
+                  .col-md-16.col-sm-16.col-xs-16
+                    .subscribe__box_item.wow.fadeIn(data-wow-delay='0.4s', data-wow-offset="0")
+                      div.subscribe__box_margin
+                        span.subscribe__box_tools
+                        h2.subscribe__box_h2 The First Example
+                        p.subscribe__box_p
+                          | Donec sit amet vulputate leo. Aenean pharetra tellus eu facilisis malesuada. Cras ac cursus nulla. Etiam commodo interdum lobortis. Cras
+                  .col-md-16.col-sm-16.col-xs-16
+                    .subscribe__box_item.wow.fadeIn(data-wow-delay='0.6s', data-wow-offset="0")
+                      div.subscribe__box_margin
+                        span.subscribe__box_cloud
+                        h2.subscribe__box_h2 Another Good Example
+                        p.subscribe__box_p
+                          | Donec sit amet vulputate leo. Aenean pharetra tellus eu facilisis malesuada. Cras ac cursus nulla. Etiam commodo interdum lobortis. Cras
+                  .col-md-16.col-sm-16.col-xs-16
+                    .subscribe__box_item.wow.fadeIn(data-wow-delay='0.8s', data-wow-offset="0")
+                      div.subscribe__box_margin          
+                        span.subscribe__box_camera
+                        h2.subscribe__box_h2 If You Need Another Example
+                        p.subscribe__box_p
+                          | Donec sit amet vulputate leo. Aenean pharetra tellus eu facilisis malesuada. Cras ac cursus nulla. Etiam commodo interdum lobortis. Cras
+              .col-md-9.subscribe__form.col-sm-16.col-xs-16
+                img.subscribe__form_image.wow.fadeIn(src='images/laptop.png', alt='Image description', data-wow-delay='0.2s', data-wow-offset="0")
+                .subscribe__form_mail.wow.fadeIn(data-wow-delay='1s', data-wow-offset="0")
+                  form#mail1(action='#', method='post')
+                    div.subscribe__form_add-icon
+                      .split-icon.clearfix
+                        span.subscribe__form_span
+                        input.subscribe__form_input(type='email', placeholder='Your Email Address')
+                      button.subscribe__form_button(type='submit')
+                        span Sign Up
+      footer.footer#section-footer_6        
+        .container
+          .row
+            .col-md-8.col-sm-9.col-xs-16
+              .footer__more
+                h2.footer__more_h2 Want More?
+                p.footer__more_p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendiss risus augue, hendrerit eget accumsan et, interdum in lacus. Nulla et convallis quam. In at nisi commodo, consequat erat sed, convallis arcu. Fusce sagittis ipsum facilisis orci consequat, nec interdum lorem ullamcorper.
+
+                ul.footer__more_ul
+                  li.footer__more_li
+                    a.footer__more_a.footer__more_facebook.hide__text(href='#') Facebook
+                  li.footer__more_li
+                    a.footer__more_a.footer__more_twitter.hide__text(href='#') Twitter
+                  li.footer__more_li
+                    a.footer__more_a.footer__more_a.footer__more_pinterest.hide__text(href='#') Pinterest
+                  li.footer__more_li
+                    a.footer__more_a.footer__more_vimeo.hide__text(href='#') Vimeo
+                  li.footer__more_li
+                    a.footer__more_a.footer__more_behance.hide__text(href='#') Behance
+
+            // .col-md-8
+            .col-md-6.col-md-offset-2.col-sm-7.col-xs-16.footer__download-bg
+              .footer__download
+                h2.footer__download_h2 Download Piatto
+                ul.footer__download_ul
+                  li.footer__download_li
+                    a.footer__download_a(href='#') Lorem ipsum dolor sit amet
+                  li.footer__download_li
+                    a.footer__download_a(href='#') Consectetur adipiscing elit
+                  li.footer__download_li
+                    a.footer__download_a(href='#') Suspendisse risus augue hendrerit
+                  li.footer__download_li
+                    a.footer__download_a(href='#') Accumsan et, interdum in lacus
+                  li.footer__download_li
+                    a.footer__download_a(href='#') Nulla et convallis quam
+
+      <a href="#top" class="cd-top">Top</a>
+      <a href="#bottom" class="cd-bottom">Bottom</a>
+
+      script(src='js/app.js')        
+      script(src='js/jquery.leanModal.js')
+
+      script.
+        $(function() {
+            $('a[data-gallary*=leanModal]').leanModal({ top : 100, closeButton: ".modal_close"});    
+        });
+
+      //- Optional greater than IE9 Support
+      <!--[if gt IE 9]>
+      script.
+        new WOW().init()
+      <![endif]-->
+      
+      //- Optional all Bowsers Support, except IE
+      <!--[if !IE]> -->
+      script(src='js/wow.min.js')
+      script.
+        wow = new WOW(
+          {
+          boxClass:     'wow',      // default
+          animateClass: 'animated', // default
+          offset:       300,          // default
+          mobile:       false,       // default
+          live:         true        // default
+          }
+          )
+          wow.init();
+      <!-- <![endif]-->      
